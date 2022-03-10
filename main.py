@@ -65,7 +65,7 @@ for i in range(len(v)):
         xs[j][i] = v[i][j]
 
 for i in range(len(names)):
-    plt.plot(ys, xs[i], label=names[i])
-    
+    plt.plot(ys, xs[i], label=names[i], linewidth=3)
+plt.plot(ys, len(xs[0])*[0], linewidth=1)
 plt.legend()
 plt.show()
